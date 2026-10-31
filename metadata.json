@@ -1,0 +1,6 @@
+{
+  "name": "Belgian Chocolate & Coffee - 3D Vitrin & Onlayn Sifariş",
+  "description": "Belgian Chocolate & Coffee üçün interaktiv 3D məhsul vitrini, fərdiləşdirmə və premium onlayn sifariş sistemi. Your Home in Europe!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
