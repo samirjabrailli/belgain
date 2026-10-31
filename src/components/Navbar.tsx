@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingBag, MapPin, Globe, Phone, Clock, Menu as MenuIcon, X, Download } from 'lucide-react';
+import { ShoppingBag, MapPin, Globe, Phone, Clock, Menu as MenuIcon, X } from 'lucide-react';
 
 interface NavbarProps {
   cartCount: number;
@@ -29,21 +29,15 @@ export const Navbar: React.FC<NavbarProps> = ({
               {isAzerbaijani ? 'Your Home in Europe! • Bakı & Sumqayıt' : 'Your Home in Europe! • Baku & Sumgait'}
             </span>
             <span className="hidden md:inline text-gray-500">|</span>
-            <span className="hidden md:inline text-gray-300 text-[11px]">
-              {isAzerbaijani ? '9 Filial: Ağ Şəhər, Nərimanov, Xətai, Sahil, Rooftop...' : '9 Branches: White City, Narimanov, Khatai, Sahil, Rooftop...'}
+            <span className="hidden md:inline text-[#eeddb2] text-[11px] font-medium flex items-center gap-1">
+              <span>✨ AI Barista:</span>
+              <span className="text-gray-300">
+                {isAzerbaijani ? 'Məhsul və inqrediyentləri canlı soruşun' : 'Ask about drinks & ingredients live'}
+              </span>
             </span>
           </div>
 
           <div className="flex items-center gap-4 text-[11px]">
-            <a
-              href="/belgian-chocolate-coffee.zip"
-              download="belgian-chocolate-coffee.zip"
-              className="text-[#eeddb2] hover:text-white transition flex items-center gap-1 font-semibold bg-[#133726] px-2 py-0.5 rounded border border-[#2b6546]"
-              title={isAzerbaijani ? 'Saytın bütün kodunu ZIP kimi yüklə' : 'Download source code as ZIP'}
-            >
-              <Download className="w-3 h-3 text-[#c59b27]" />
-              <span>{isAzerbaijani ? 'Kodu Yüklə (.ZIP)' : 'Download Code (.ZIP)'}</span>
-            </a>
             <button
               onClick={onOpenBranches}
               className="hover:text-white transition flex items-center gap-1"
@@ -190,14 +184,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="block text-sm font-medium text-white py-1"
           >
             📖 {isAzerbaijani ? 'Haqqımızda' : 'About Us'}
-          </a>
-          <a
-            href="/belgian-chocolate-coffee.zip"
-            download="belgian-chocolate-coffee.zip"
-            className="flex items-center gap-2 text-sm font-semibold text-[#eeddb2] py-2 px-3 bg-[#133726] rounded-xl border border-[#2b6546]"
-          >
-            <Download className="w-4 h-4 text-[#c59b27]" />
-            <span>{isAzerbaijani ? 'Saytın Kodunu Yüklə (.ZIP)' : 'Download Source (.ZIP)'}</span>
           </a>
         </div>
       )}

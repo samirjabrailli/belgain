@@ -133,21 +133,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBranches, isAzerbaijani })
         {/* Bottom Bar */}
         <div className="mt-12 pt-6 border-t border-[#143324] flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
           <p>© {new Date().getFullYear()} Belgian Chocolate & Coffee. Bütün hüquqlar qorunur.</p>
-          <div className="flex items-center gap-4">
-            <a
-              href="/belgian-chocolate-coffee.zip"
-              download="belgian-chocolate-coffee.zip"
-              className="text-[#d4af37] hover:underline flex items-center gap-1 font-semibold"
-            >
-              ⬇ {isAzerbaijani ? 'Layihənin Bütün Kodunu ZIP Kimi Yüklə (.zip)' : 'Download Full Codebase (.zip)'}
-            </a>
-            <span className="hidden sm:inline text-gray-600">|</span>
-            <p className="flex items-center gap-1.5 text-gray-400">
-              <span>Your Home in Europe</span>
-              <span>•</span>
-              <span className="text-[#eeddb2]">Bakı, Azərbaycan</span>
-            </p>
-          </div>
+          <p className="flex items-center gap-1.5 text-gray-400">
+            <span>Your Home in Europe</span>
+            <span>•</span>
+            <span className="text-[#eeddb2]">Bakı, Azərbaycan</span>
+          </p>
         </div>
       </div>
     </footer>

@@ -9,6 +9,7 @@ import { CheckoutModal } from './components/CheckoutModal';
 import { BranchesModal } from './components/BranchesModal';
 import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
+import { AiAssistant } from './components/AiAssistant';
 import { CartItem, ProductItem, Size, Order } from './types';
 import { PRODUCTS } from './data/menuData';
 import { Sparkles, ShoppingBag, CheckCircle, Clock } from 'lucide-react';
@@ -332,6 +333,9 @@ export default function App() {
         }}
         isAzerbaijani={isAzerbaijani}
       />
+
+      {/* AI Barista Assistant Widget */}
+      <AiAssistant isAzerbaijani={isAzerbaijani} />
     </div>
   );
 }
